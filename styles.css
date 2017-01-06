@@ -1,0 +1,29 @@
+/*Currently, the <li> items are block level elements. 
+Add correct styles to remove the bullets and display them 
+as inline elements.*/
+
+/* i'm not sure why this worked. i though i'd have to declare
+ list style: none; or something, but as soon as they went inline
+ the bullets seemed to disappear??*/
+
+li {
+	display: inline;
+}
+
+/* The three <span> elements should be displayed as block elements 
+with a 1 pixel border and 25 pixel margin on all sides. */
+
+span {
+	display: block;
+	margin: 25px;
+	border: 1px solid red;
+}
+
+/* In the article element with the class n-child, 
+add a 1 pixel border around every even numbered section element.
+starts at 3rd child and selects each with multiple of 2 index after
+that <div> threw me for a bit */
+
+.n-child :nth-child(2n + 3) {
+	border: 1px solid red;
+}
